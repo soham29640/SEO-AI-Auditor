@@ -1,0 +1,18 @@
+# Virtual environment
+myenv/
+
+# Python cache
+__pycache__/
+
+# Compiled python files
+*.pyc
+
+# Environment variables
+.env
+
+# Docker (optional but common)
+.dockerignore
+
+# OS / editor files
+.vscode/
+.DS_Store

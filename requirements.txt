@@ -1,0 +1,6 @@
+spacy
+pandas 
+numpy
+scikit-learn
+ipykernel
+openpyxl
