@@ -4,3 +4,5 @@ numpy
 scikit-learn
 ipykernel
 openpyxl
+ddgs
+crawl4ai
