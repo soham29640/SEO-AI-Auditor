@@ -1,9 +1,9 @@
 spacy
-pandas 
+pandas
 numpy
 scikit-learn
-ipykernel
-openpyxl
-ddgs
-crawl4ai
 sentence-transformers
+crawl4ai
+ddgs
+openpyxl
+ipykernel

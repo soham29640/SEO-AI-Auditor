@@ -45,8 +45,63 @@ for keyword in top_keywords:
     else:
         missing.append(keyword)
 
-print("Present Keywords:")
-print(present)
+# --------------------- SEO GAP ANALYSIS REPORT ---------------------
 
-print("\nMissing Keywords:")
-print(missing)
+query_lower = query.lower()
+
+present = []
+missing = []
+
+for keyword in top_keywords:
+    if keyword in query_lower:
+        present.append(keyword)
+    else:
+        missing.append(keyword)
+
+total_keywords = len(top_keywords)
+coverage = len(present) / total_keywords * 100
+
+print("\n================ SEO KEYWORD GAP REPORT ================\n")
+
+print(f"Total Important Keywords Analyzed: {total_keywords}")
+print(f"Keywords Present: {len(present)}")
+print(f"Keywords Missing: {len(missing)}")
+print(f"Coverage Score: {coverage:.2f}%")
+
+# ---------------- Severity Level ----------------
+if coverage >= 75:
+    severity = "Low"
+elif coverage >= 50:
+    severity = "Moderate"
+else:
+    severity = "High"
+
+print(f"\nGap Severity Level: {severity}")
+
+# ---------------- Print Missing Keywords ----------------
+print("\n🔍 Missing Important Keywords:")
+print(", ".join(missing[:20]))  # show top 20 only
+
+# ---------------- Improvement Suggestions ----------------
+print("\n🔧 Recommended Improvements:")
+
+if severity == "High":
+    print("- Your content is missing many high-value competitor keywords.")
+    print("- Add comparison sections covering competitor tools.")
+    print("- Include feature breakdowns and keyword research terminology.")
+    print("- Expand content depth to match SERP leaders.")
+    print("- Add structured headings targeting missing phrases.")
+
+elif severity == "Moderate":
+    print("- Your content covers some key terms but lacks full coverage.")
+    print("- Improve semantic depth by adding related SEO concepts.")
+    print("- Strengthen competitor comparison sections.")
+    print("- Add FAQs addressing missing keyword clusters.")
+
+else:
+    print("- Your keyword coverage is strong.")
+    print("- Focus on improving semantic richness.")
+    print("- Enhance content clarity and user engagement signals.")
+    print("- Optimize internal linking and structure.")
+
+print("\n=========================================================\n")
