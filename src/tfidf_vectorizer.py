@@ -7,6 +7,6 @@ def build_tfidf(text_series):
         ngram_range=(1,3)
     )
 
-    X = tfidf.fit_transform(text_series)
+    transformed_output = tfidf.fit_transform(text_series)
 
-    return X, tfidf
+    return transformed_output

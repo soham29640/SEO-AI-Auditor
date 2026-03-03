@@ -6,3 +6,4 @@ ipykernel
 openpyxl
 ddgs
 crawl4ai
+sentence-transformers
