@@ -7,3 +7,9 @@ crawl4ai
 ddgs
 openpyxl
 ipykernel
+streamlit
+fastapi
+uvicorn
+playwright
+google-genai
+python-dotenv
