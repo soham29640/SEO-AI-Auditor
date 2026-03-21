@@ -179,7 +179,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 ### 7. Start the API server
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.main:app --loop asyncio
 ```
 
 API available at → `http://localhost:8000`  
