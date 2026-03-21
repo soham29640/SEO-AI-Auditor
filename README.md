@@ -415,6 +415,10 @@ curl -X POST "http://localhost:8000/SEO%20report" \
 
 **Example Response**
 
+As example we take "Best WWE player" as keyword
+but as url we take WWE official website to show how this url is not alligned with the keyword
+and what to improve in report
+
 ```json
 [
   "https://www.wwe.com/superstars",
