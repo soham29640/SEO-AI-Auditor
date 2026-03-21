@@ -51,18 +51,6 @@ An NLP-driven SEO intelligence engine that analyzes your webpage against top-ran
 
 ---
 
-## 🧮 Final Scoring Formula
-
-```
-Final Score (0–100) =
-  0.40 × Semantic Coverage Score
-  0.25 × Topic Coverage Score
-  0.20 × Entity Coverage Score
-  0.15 × Content Depth Score
-```
-
----
-
 ## 🛠 Tech Stack
 
 | Category | Libraries / Tools |
