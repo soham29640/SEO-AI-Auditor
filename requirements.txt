@@ -1,6 +1,15 @@
 spacy
-pandas 
+pandas
 numpy
 scikit-learn
-ipykernel
+sentence-transformers
+crawl4ai
+ddgs
 openpyxl
+ipykernel
+streamlit
+fastapi
+uvicorn
+playwright
+google-genai
+python-dotenv
