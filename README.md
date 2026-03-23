@@ -74,19 +74,19 @@ The entire pipeline is exposed as a single REST endpoint, making it trivial to i
 ┌─────────────────────────────────────────────────────────────────┐
 │                  SEO Engine  (src/seo_engine.py)                │
 │                                                                 │
-│  ┌──────────────┐  ┌───────────────┐  ┌──────────────────────┐ │
-│  │  Crawler     │  │  Similarity   │  │  Topic Modeling      │ │
-│  │  crawler.py  │  │  similarity.py│  │  topic_modeling.py   │ │
-│  └──────────────┘  └───────────────┘  └──────────────────────┘ │
-│  ┌──────────────┐  ┌───────────────┐                           │
-│  │  NER         │  │  Depth /      │                           │
-│  │  ner.py      │  │  Authority    │                           │
-│  └──────────────┘  └───────────────┘                           │
+│  ┌──────────────┐  ┌───────────────┐  ┌──────────────────────┐  │
+│  │  Crawler     │  │  Similarity   │  │  Topic Modeling      │  │
+│  │  crawler.py  │  │  similarity.py│  │  topic_modeling.py   │  │
+│  └──────────────┘  └───────────────┘  └──────────────────────┘  │
+│  ┌──────────────┐  ┌───────────────┐                            │
+│  │  NER         │  │  Depth /      │                            │
+│  │  ner.py      │  │  Authority    │                            │
+│  └──────────────┘  └───────────────┘                            │
 └────────────────────────────┬────────────────────────────────────┘
                              │  Structured metrics
                              ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│            Report Generator  (model/report_generator.py)       │
+│            Report Generator  (model/report_generator.py)        │
 │                    ↕  Google Gemini API                         │
 └─────────────────────────────────────────────────────────────────┘
 ```
