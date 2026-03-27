@@ -13,3 +13,4 @@ uvicorn
 playwright
 google-genai
 python-dotenv
+requests
