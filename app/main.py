@@ -10,7 +10,7 @@ if sys.platform.startswith("win"):
 from fastapi import FastAPI
 from pydantic import BaseModel
 from src.seo_engine import submit
-from seo_content_creater.mcp_agent import run_mcp_agent   # ✅ your agent
+from seo_content_creator.mcp_agent import run_mcp_agent   # ✅ your agent
 
 app = FastAPI(title="AI SEO Auditor API")
 

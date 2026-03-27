@@ -17,7 +17,7 @@ import shutil
 import time
 
 
-from utils import load_json, load_html, save_html
+from seo_content_creator.utils import load_json, load_html, save_html
 
 
 
@@ -83,7 +83,7 @@ def _get_body_snippet(html: str) -> str:
 
 def _gemini_meta_pass(html: str, report_data: dict) -> str:
     try:
-        from gemini_client import GeminiClient
+        from seo_content_creator.gemini_client import GeminiClient
         gemini = GeminiClient()
 
 
@@ -227,7 +227,7 @@ Write ONE <section> block that fills this SEO gap.
 
 def run_mcp_agent(website_path: str, report_path: str):
     try:
-        from ollama_client import OllamaClient
+        from seo_content_creator.ollama_client import OllamaClient
         llm = OllamaClient()   # uses llama3 by default
 
 
